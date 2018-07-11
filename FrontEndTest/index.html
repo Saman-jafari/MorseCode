@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MorseCode</title>
+
+    <style>
+        html{
+            font-size: 62.5%;
+        }
+
+        html body{
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            width: 1200px;
+            margin: auto;
+            flex-direction: column;
+        }
+        .center{
+            margin: auto;
+            position: relative;
+            margin-top: 15rem;
+            width: 100%;
+
+        }
+        .smallSpace{
+            letter-spacing: 0;
+            font-weight: normal;
+            text-align: center;
+            margin: 0;
+        }
+        #answer{
+            width: 50%;
+            background: #f5f5f5;
+            min-height: 10vh;
+            margin: auto;
+            margin-top: 2rem;
+            border-radius: 0.5rem;
+            border: .2rem solid #f0f0f0 ;
+            padding: 1rem 3rem;
+            font-size: 1.6rem;
+            color: #000000;
+            font-weight: bold;
+            letter-spacing: 0.5rem;
+        }
+
+        #encrypt-decrypt {
+            display: block;
+            width: 50%;
+            margin: auto;
+            padding: .375rem .75rem;
+            font-size: 1.6rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="center">
+        <input type="text" id="encrypt-decrypt" placeholder="Enter Your Text Or Morse Code" >
+    </div>
+    <div id="answer"></div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
